@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>Project 146</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-sky color="black"></a-sky>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+    <!-- body -->
+    <a-sphere position="0 2 -4" radius="1.25" color="dodgerblue"></a-sphere>
+    <!-- legs -->
+    <a-sphere position="-0.5 0.6 -4" color='white' radius="0.5"></a-sphere>
+    <a-sphere position="0.5 0.6 -4" color='white' radius="0.5"></a-sphere>
+    <!-- face -->
+    <a-sphere position="0 3.75 -4" color='white' radius="1"></a-sphere>
+    <!-- eyes -->
+    <a-entity animation="property:position;from:0 -0.2 0;to:0 0 0;dir:alternate;loop:true;dur:1000">
+      <a-sphere color='dodgerblue' radius='0.1' position='-0.5 3.75 -3'></a-sphere>
+      <a-sphere color='dodgerblue' radius='0.1' position='0.5 3.75 -3'></a-sphere>
+    </a-entity>
+    <a-sphere color='red' radius='0.2' position='0 3.5 -3'></a-sphere>
+    <!-- <a-cylinder animation="property:rotation;from:-0.3 4.5 -3.4;to:0.3 4.5 -3.4;dir:alternate;loop:true;dur:1000" position="0 4.5 -3.4" radius="0.2" height="0.5" color="#FFC65D"></a-cylinder> -->
+    <a-cylinder position="0 4.5 -3.4" radius="0.2" height="0.5" color="#FFC65D"></a-cylinder>
+  </a-scene>
+</body>
+
+</html>
